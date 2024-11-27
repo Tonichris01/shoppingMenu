@@ -3,9 +3,9 @@
 }
 
 #container {
-    border: 2px solid black;
+    border: 2px solid gold;
     border-radius: 20px;
-    margin: 12px;
+    margin: 12px auto;
     padding: 10px;
     color: darkgreen;
     width: max-content;
@@ -13,10 +13,12 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     background-color: gold;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5); */
 }
 
 center {
-    text-decoration: underline;
+    font-size: clamp(2rem, 2vw, 4rem);
 }
 
 input[type='number'] {
@@ -70,17 +72,27 @@ input[type='text'] {
     font-size: larger;
     font-style: normal;
 }
-
+#buttonContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: 2px solid red;
-    border-radius: 12px;
+    padding: 8px 15px;
+    margin: 8px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
     cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
+    width: 70%;
+    /* opacity: 0.9; */
+}
+
+button:hover{
+    background-color: #025705;   
+    border: 2px solid #025705;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
 }
 
 .t_price {
